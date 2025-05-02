@@ -36,3 +36,37 @@ Files:
   cgi-bin/adder.c	CGI program that adds two numbers
   cgi-bin/Makefile	Makefile for adder.c
 
+초소형 웹 서버
+데이브 오할라론
+카네기 멜론 대학교
+이것은 “15-213: 15-213”에서 사용하는 200줄짜리 웹
+서버의 홈 디렉토리입니다: 컴퓨터 시스템 입문"에서 사용하는 200줄짜리 웹 서버의 홈 디렉토리입니다.
+멜론 대학교.  Tiny는 GET 메서드를 사용하여 정적 콘텐츠(
+(텍스트, HTML, GIF, JPG 파일)를 ./에서 제공하고, 동적 콘텐츠는 CGI 프로그램을 실행하여
+./cgi-bin에서 CGI 프로그램을 실행하여 동적 콘텐츠를 제공합니다. 기본 
+페이지는 index.html이 아닌 home.html이므로 브라우저에서 디렉터리의 콘텐츠를
+디렉토리의 콘텐츠를 볼 수 있습니다.
+Tiny는 안전하지도 완전하지도 않지만, 학생들에게 실제 웹 서버가 어떻게 작동하는지
+실제 웹 서버가 어떻게 작동하는지에 대한 아이디어를 제공합니다. 교육 목적으로만 사용하세요.
+이 코드는 Linux 2.2.20에서 gcc 2.95.3을 사용하여 깔끔하게 컴파일 및 실행됩니다. 
+를 사용하여 깨끗하게 컴파일되고 실행됩니다.
+Tiny를 설치하려면 다음과 같이 하세요:
+   깨끗한 디렉터리에 “tar xvf tiny.tar”를 입력합니다. 
+Tiny를 실행하려면 다음과 같이 하세요:
+   서버 컴퓨터에서 “tiny <포트>”를 실행합니다, 
+   예: “tiny 8000”.
+   브라우저에서 Tiny를 가리킵니다: 
+   정적 콘텐츠: http://<호스트>:8000
+   동적 콘텐츠: http://<호스트>:8000/cgi-bin/adder?1&2
+파일:
+  tiny.tar 이 디렉터리에 있는 모든 것의 아카이브
+  tiny.c Tiny 서버
+  tiny.c에 대한 메이크파일 메이크파일
+  home.html 테스트 HTML 페이지
+  home.html에 삽입된 godzilla.gif 이미지
+  README 이 파일   
+  cgi-bin/adder.c 두 숫자를 추가하는 CGI 프로그램
+  cgi-bin/Makefile adder.c용 메이크파일
+
+
+Translated with DeepL.com (free version)

@@ -44,3 +44,22 @@ int main(int argc, char **argv)
     Close(connfd); // line:netp:tiny:close
   }
 }
+
+void doit(int fd){
+  int is_static;
+  struct stat sbuf;
+  char buf[MAXLINE], method[MAXLINE], uri[MAXLINE], version[MAXLINE];
+  char filename[MAXLINE], cgiargs[MAXLINE];
+  rio_t rio;
+  
+  //리퀘스트 라인과 헤더 읽기
+  Rio_readinitb(&rio, fd);
+  Rio_readinitb(&rio buf, MAXLINE);
+  printf("헤더 요청\n");
+  printf("%s", buf);
+  sscanf(buf, "%s, %s, %s", method, uri, version);
+  if(strcasecmp(method, "GET")){
+    clienterror//여기까지 하다 말았음
+  }
+
+}
