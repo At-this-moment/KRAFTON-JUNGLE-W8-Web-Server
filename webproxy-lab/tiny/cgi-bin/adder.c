@@ -2,7 +2,11 @@
  * adder.c - a minimal CGI program that adds two numbers together
  */
 /* $begin adder */
-#include "csapp.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAXLINE 8192
 
 int main(void)
 {
